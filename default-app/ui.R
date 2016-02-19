@@ -11,10 +11,12 @@ shinyUI(
              fluid = TRUE,
              #icon("cubes"),
              tabPanel("Home",
-                      icon("cubes"),
+                      #icon("cubes"),
+                      #fluidRow(img(src="noun_250323.png", width="75px", height="75px")),
                       fluidRow(
                         column(2,
                                HTML('<script> document.title = "Elca Technologies Ltd"; </script>'),
+                               img(src="noun_250323.png", width="100px", height="100px"),
                                h4("Contact:"),
                                p("chris@elcatech.co.uk")
                         ),
@@ -26,9 +28,9 @@ shinyUI(
                         )
                       )),
              tabPanel("CV",
-                      icon("cubes"),
                       fluidRow(
                         column(2,
+                               img(src="noun_250323.png", width="100px", height="100px"),
                                h4("Contact:"),
                                p("chris@elcatech.co.uk")
                         ),
@@ -82,7 +84,7 @@ shinyUI(
                                h3("MBA (Finance) - Part-time"),
                                p("Durham University 2014"),
                                h3("MA (Hons) Business Economics & Marketing"),
-                               p("UNiversity of Dundee 1999")
+                               p("University of Dundee 1999")
                                
                              
                         )
