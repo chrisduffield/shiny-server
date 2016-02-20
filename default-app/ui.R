@@ -2,7 +2,7 @@ library(shiny)
 library(shinythemes)
 
 shinyUI(
-  navbarPage(#title=div(img(src="noun_250323.png", width="75px", height="75px"), "elcatech.co.uk"),
+  navbarPage(#title=includeHTML("./www/header.html"),
              "elcatech.co.uk",
              theme=shinytheme("flatly"),
              position = "static-top",
@@ -15,15 +15,22 @@ shinyUI(
                       #fluidRow(img(src="noun_250323.png", width="75px", height="75px")),
                       fluidRow(
                         column(2,
+                               
                                HTML('<script> document.title = "Elca Technologies Ltd"; </script>'),
                                img(src="noun_250323.png", width="100px", height="100px"),
                                h4("Contact:"),
-                               p("chris@elcatech.co.uk")
+                               p("chris@elcatech.co.uk"),
+                               p("This website is written in Shiny, a web framework for the R language."),
+                               p("As R is coming to SQL Server 2016 I thought I should get some more practise and this seemed a logical place to start. 
+                                 I'll be adding pages to show some of the capabilities of R and shiny over time.")
                         ),
                         column(8,
+                               img(src="geograph-4598510-by-Derek-Harper-2.jpg", width="1024px", height="650px"),
+                               includeHTML("./www/picturelicense.html"),
                                h3("Elca Technologies Ltd")
                                ,p("Offering a variety of data focused services including Business Analysis, Data modelling, SQL Server development
-                     and administration, ETL using SSIS and reporting using a variety of tools.")
+                                and administration, ETL using SSIS and reporting using a variety of tools. Projects of all sizes undertaken on either a fixed price or
+                                 time and materials basis, please contact me to discuss your projects and rates.")
                                #,h4("Data modelling.")
                         )
                       )),
@@ -32,7 +39,8 @@ shinyUI(
                         column(2,
                                img(src="noun_250323.png", width="100px", height="100px"),
                                h4("Contact:"),
-                               p("chris@elcatech.co.uk")
+                               p("chris@elcatech.co.uk"),
+                               img(src="Chris_Duffield.jpg", width="200px", height="250px")
                         ),
                         column(8,
                                
