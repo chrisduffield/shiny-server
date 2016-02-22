@@ -22,7 +22,7 @@ shinyUI(
                                p("chris@elcatech.co.uk"),
                                p("This website is written in Shiny, a web framework for the R language."),
                                p("As R is coming to SQL Server 2016 I thought I should get some more practise and this seemed a logical place to start. 
-                                 I'll be adding pages to show some of the capabilities of R and shiny over time.")
+                                 I'll be adding pages to show some of the capabilities of R and Shiny over time.")
                         ),
                         column(8,
                                img(src="geograph-4598510-by-Derek-Harper-2.jpg", width="1024px", height="650px"),
@@ -31,7 +31,16 @@ shinyUI(
                                ,p("Offering a variety of data focused services including Business Analysis, Data modelling, SQL Server development
                                 and administration, ETL using SSIS and reporting using a variety of tools. Projects of all sizes undertaken on either a fixed price or
                                  time and materials basis, please contact me to discuss your projects and rates.")
-                               #,h4("Data modelling.")
+                               ,h4("Database Development & Administration")
+                               ,p("Experience developing and administering SQL Server 2000 to 2014 including performance tuning, clustering, logshipping and backup / restore implementation and testing.")
+                               ,h4("Data Warehousing")
+                               ,p("Warehouse design and implementation including ETL using SSIS.")
+                               ,h4("Business Analysis & Data modelling")
+                               ,p("Data focused business analysis ensuring systems and processes are aligned to capture all the data required by users.")
+                               ,h4("Business Intelligence")
+                               ,p("Primarily using the Microsoft BI stack (SSIS, SSAS & SSRS) but with experience of Business Objects, Cognos, Crystal Reports and Qlikview")
+                               ,h4("GIS")
+                               ,p("Spatial querying using SQL Server and PostGIS and loading and displaying data in QGIS and GeoServer.")
                         )
                       )),
              tabPanel("CV",
